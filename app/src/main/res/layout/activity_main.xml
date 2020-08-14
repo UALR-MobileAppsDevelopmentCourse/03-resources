@@ -6,13 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- TODO 01. Resource access. Replace the hardcoded text value with a string resource -->
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:padding="@dimen/spacing_xlarge"
+        android:text="@string/lorem_ipsum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO 12. Define tint color for the ImageView component -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        app:tint="@color/blue_500" />
+
+    <!-- TODO 13. Create a state list drawable that provides a specific icon when a button is checked,
+                  and a different one on normal state -->
+    <!-- TODO 18. Set the color state list as text color of the button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@android:color/white"
+        android:drawableLeft="@drawable/ic_clock_button"
+        android:textColor="@color/button_bg"
+        android:text="@string/clock"
+        android:checkable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <!-- TODO 14. Define an alternate drawable resource to be used for landscape orientation -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

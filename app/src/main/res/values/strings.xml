@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">03-resources</string>
+    <!-- TODO 06. String resources here -->
+    <string name="app_name" translatable="false">Resources</string>
+    <string name="lorem_ipsum" translatable="false">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+    <string name="clock" translatable="false">Clock</string>
+    <!-- TODO 07. String array resource -->
+    <string-array name="planets">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+    </string-array>
+    <!-- TODO 15. Add a new string value and the corresponding translation using the Translations editor-->
+    <string name="international_sentence">John Doe here. Nice to meet you</string>
 </resources>
