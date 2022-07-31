@@ -4,7 +4,7 @@ Android project used as introduction to the use of resources on Android apps, as
 
 ## Description
 
-Simple app used to illustrate how to use resouces in an Android app.
+Simple app used to illustrate how to use resources in an Android app.
 
 ## Branches
 
